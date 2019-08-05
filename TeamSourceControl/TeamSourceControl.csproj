@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="AddPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPage.Designer.cs">
+      <DependentUpon>AddPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="UpdatePage.Designer.cs">
       <DependentUpon>UpdatePage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddPage.resx">
+      <DependentUpon>AddPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
