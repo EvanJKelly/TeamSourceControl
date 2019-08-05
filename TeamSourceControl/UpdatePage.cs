@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TeamSourceControl
 {
-    public partial class MainPage : Form
+    public partial class UpdatePage : Form
     {
-        public MainPage()
+        public UpdatePage()
         {
             InitializeComponent();
         }
