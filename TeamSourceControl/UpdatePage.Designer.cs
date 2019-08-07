@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LinkTitle = new System.Windows.Forms.Label();
-            this.Link = new System.Windows.Forms.Label();
+            this.LinkTitlelabel = new System.Windows.Forms.Label();
+            this.LinkLabel = new System.Windows.Forms.Label();
             this.UpdateTItleBox = new System.Windows.Forms.TextBox();
             this.UpdateLinkBox = new System.Windows.Forms.TextBox();
             this.UpdateLinkButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // LinkTitle
+            // LinkTitlelabel
             // 
-            this.LinkTitle.AutoSize = true;
-            this.LinkTitle.Location = new System.Drawing.Point(262, 85);
-            this.LinkTitle.Name = "LinkTitle";
-            this.LinkTitle.Size = new System.Drawing.Size(27, 13);
-            this.LinkTitle.TabIndex = 0;
-            this.LinkTitle.Text = "Title";
+            this.LinkTitlelabel.AutoSize = true;
+            this.LinkTitlelabel.Location = new System.Drawing.Point(262, 85);
+            this.LinkTitlelabel.Name = "LinkTitlelabel";
+            this.LinkTitlelabel.Size = new System.Drawing.Size(27, 13);
+            this.LinkTitlelabel.TabIndex = 0;
+            this.LinkTitlelabel.Text = "Title";
             // 
-            // Link
+            // LinkLabel
             // 
-            this.Link.AutoSize = true;
-            this.Link.Location = new System.Drawing.Point(265, 122);
-            this.Link.Name = "Link";
-            this.Link.Size = new System.Drawing.Size(30, 13);
-            this.Link.TabIndex = 1;
-            this.Link.Text = "Link:";
+            this.LinkLabel.AutoSize = true;
+            this.LinkLabel.Location = new System.Drawing.Point(265, 122);
+            this.LinkLabel.Name = "LinkLabel";
+            this.LinkLabel.Size = new System.Drawing.Size(30, 13);
+            this.LinkLabel.TabIndex = 1;
+            this.LinkLabel.Text = "Link:";
             // 
             // UpdateTItleBox
             // 
@@ -75,6 +75,7 @@
             this.UpdateLinkButton.TabIndex = 4;
             this.UpdateLinkButton.Text = "Update ";
             this.UpdateLinkButton.UseVisualStyleBackColor = true;
+            this.UpdateLinkButton.Click += new System.EventHandler(this.UpdateLinkButton_Click);
             // 
             // UpdatePage
             // 
@@ -84,8 +85,8 @@
             this.Controls.Add(this.UpdateLinkButton);
             this.Controls.Add(this.UpdateLinkBox);
             this.Controls.Add(this.UpdateTItleBox);
-            this.Controls.Add(this.Link);
-            this.Controls.Add(this.LinkTitle);
+            this.Controls.Add(this.LinkLabel);
+            this.Controls.Add(this.LinkTitlelabel);
             this.Name = "UpdatePage";
             this.Text = "UpdatePage";
             this.Load += new System.EventHandler(this.UpdatePage_Load);
@@ -96,8 +97,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label LinkTitle;
-        private System.Windows.Forms.Label Link;
+        private System.Windows.Forms.Label LinkTitlelabel;
+        private System.Windows.Forms.Label LinkLabel;
         private System.Windows.Forms.TextBox UpdateTItleBox;
         private System.Windows.Forms.TextBox UpdateLinkBox;
         private System.Windows.Forms.Button UpdateLinkButton;

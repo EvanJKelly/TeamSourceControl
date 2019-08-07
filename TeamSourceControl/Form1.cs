@@ -25,7 +25,6 @@ namespace TeamSourceControl
                 LinkCboBox.Items.Remove(LinkCboBox.SelectedItem);
             }
         }
-
         private void PopulateLinkComboBox()
         {
             List<Link> links = LinkDB.GetAllLinks();
@@ -38,8 +37,14 @@ namespace TeamSourceControl
                 LinkCboBox.Items.Add(l);
             }
         }
-
         private void MainUpdateLinkButton_Click(object sender, EventArgs e)
+        {
+          
+            UpdatePage updatelink = new UpdatePage();
+            updatelink.ShowDialog();
+        }
+
+        private void DisplayUpdateForm()
         {
             UpdatePage updatelink = new UpdatePage();
             updatelink.ShowDialog();

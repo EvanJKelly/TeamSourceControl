@@ -61,5 +61,32 @@ namespace TeamSourceControl
                 con.Dispose();
             }
         }
+
+        public static void Update(Link l)
+        {
+            SqlConnection con = DBHelper.GetConnection();
+            SqlCommand updateCmd = new SqlCommand();
+            updateCmd.Connection = con;
+            updateCmd.CommandText = "UPDATE Links " +
+                "SET LinkTitle = @LinkTitle, " +
+                "LinkURL = @LinkURL";
+            updateCmd.Parameters.AddWithValue("@LinkTitle", l.LinkTitle);
+            updateCmd.Parameters.AddWithValue("@LinkURL", l.LinkTitle);
+
+            try
+            {
+                con.Open();
+                int affectedrows = updateCmd.ExecuteNonQuery();
+            }
+            finally 
+            {
+
+                con.Dispose();
+            }
+                
+                
+
+
+        }
     }
 }

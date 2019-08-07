@@ -30,5 +30,10 @@ namespace TeamSourceControl
             MessageBox.Show("Link added!");
             Close();
         }
+
+        private void AddPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
