@@ -78,6 +78,7 @@
             this.MainDeleteLinkButton.TabIndex = 4;
             this.MainDeleteLinkButton.Text = "Delete Link";
             this.MainDeleteLinkButton.UseVisualStyleBackColor = true;
+            this.MainDeleteLinkButton.Click += new System.EventHandler(this.MainDeleteLinkButton_Click);
             // 
             // MainPage
             // 

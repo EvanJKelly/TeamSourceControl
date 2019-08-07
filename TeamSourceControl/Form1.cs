@@ -16,5 +16,13 @@ namespace TeamSourceControl
         {
             InitializeComponent();
         }
+
+        private void MainDeleteLinkButton_Click(object sender, EventArgs e)
+        {
+            if(LinkCboBox.SelectedItem != null)
+            {
+                LinkCboBox.Items.Remove(LinkCboBox.SelectedItem);
+            }
+        }
     }
 }
