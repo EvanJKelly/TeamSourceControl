@@ -17,7 +17,6 @@ namespace TeamSourceControl
         public Link(String Title, String URL)
         {
 
-
             LinkTitle = Title;
             LinkURL = URL;
         }
@@ -27,9 +26,7 @@ namespace TeamSourceControl
 
         public string LinkTitle { get; set; }
 
-        public string LinkURL { get; set; }
+        public String LinkURL { get; set; }
 
-
-       
     }
 }
