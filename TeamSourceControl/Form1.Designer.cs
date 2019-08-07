@@ -60,6 +60,7 @@
             this.MainAddLinkButton.TabIndex = 2;
             this.MainAddLinkButton.Text = "Add Link";
             this.MainAddLinkButton.UseVisualStyleBackColor = true;
+            this.MainAddLinkButton.Click += new System.EventHandler(this.MainAddLinkButton_Click);
             // 
             // MainUpdateLinkButton
             // 
@@ -78,6 +79,7 @@
             this.MainDeleteLinkButton.TabIndex = 4;
             this.MainDeleteLinkButton.Text = "Delete Link";
             this.MainDeleteLinkButton.UseVisualStyleBackColor = true;
+            this.MainDeleteLinkButton.Click += new System.EventHandler(this.MainDeleteLinkButton_Click);
             // 
             // MainPage
             // 
