@@ -16,5 +16,18 @@ namespace TeamSourceControl
         {
             InitializeComponent();
         }
+
+        private void AddLinkButton_Click(object sender, EventArgs e)
+        {
+            Link link = new Link()
+            {
+                LinkURL = AddTitleBox.Text,
+                LinkTitle = AddLinkiBox.Text
+            };
+
+            LinkDB.Add(link);
+            MessageBox.Show("Link added!");
+            Close();
+        }
     }
 }
