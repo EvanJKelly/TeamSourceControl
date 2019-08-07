@@ -13,7 +13,6 @@ namespace TeamSourceControl
 
         }
 
-
         public Link(String Title, String URL)
         {
 
