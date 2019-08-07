@@ -30,8 +30,8 @@ namespace TeamSourceControl
             while (rdr.Read())
             {
                 Link tempLink = new Link();
-                tempLink.LinkURL = Convert.ToString(rdr["URL"]);
                 tempLink.LinkTitle = Convert.ToString(rdr["Title"]);
+                tempLink.LinkURL = Convert.ToString(rdr["URL"]);
                 linkList.Add(tempLink);
             }
 
@@ -46,10 +46,10 @@ namespace TeamSourceControl
 
             SqlCommand addCmd = new SqlCommand();
             addCmd.Connection = con;
-            addCmd.CommandText = "INSERT INTO VideoLinks(URL, Title)" +
-                "VALUES (@url, @title)";
-            addCmd.Parameters.AddWithValue("@url", link.LinkURL);
+            addCmd.CommandText = "INSERT INTO VideoLinks(Title, URL)" +
+                "VALUES (@title, @url)";
             addCmd.Parameters.AddWithValue("@title", link.LinkTitle);
+            addCmd.Parameters.AddWithValue("@url", link.LinkURL);
 
             try
             {
