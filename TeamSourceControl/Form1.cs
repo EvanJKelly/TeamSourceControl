@@ -32,5 +32,11 @@ namespace TeamSourceControl
 
 
         }
+
+        private void MainUpdateLinkButton_Click(object sender, EventArgs e)
+        {
+            UpdatePage updatelink = new UpdatePage();
+            updatelink.ShowDialog();
+        }
     }
 }
