@@ -6,28 +6,26 @@ using System.Threading.Tasks;
 
 namespace TeamSourceControl
 {
-   public class Link
+    public class Link
     {
         public Link()
         {
 
         }
 
-        public Link( string URL, string Title)
+        public Link(String Title, String URL)
         {
-          
-            LinkURL = URL;
+
             LinkTitle = Title;
+            LinkURL = URL;
         }
 
-        public   int LinkID { get; set; }
 
-        public string LinkURL { get; set; }
+        public int LinkId { get; set; }
 
         public string LinkTitle { get; set; }
 
-
-
+        public String LinkURL { get; set; }
 
     }
 }

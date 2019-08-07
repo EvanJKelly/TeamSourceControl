@@ -21,15 +21,12 @@ namespace TeamSourceControl
 
         private void MainDeleteLinkButton_Click(object sender, EventArgs e)
         {
-            if(LinkCboBox.SelectedIndex >= 0)
+            if (LinkCboBox.SelectedItem != null)
             {
-                LinkCboBox.Items.RemoveAt(LinkCboBox.SelectedIndex);
+                LinkCboBox.Items.Remove(LinkCboBox.SelectedItem);
             }
         }
-
-        private void MainAddLinkButton_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
+
+   
 }
