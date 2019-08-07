@@ -89,6 +89,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddPage";
             this.Text = "AddPage";
+            this.Load += new System.EventHandler(this.AddPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
