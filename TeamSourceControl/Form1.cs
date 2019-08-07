@@ -24,5 +24,19 @@ namespace TeamSourceControl
                 LinkCboBox.Items.Remove(LinkCboBox.SelectedItem);
             }
         }
+
+        private void MainAddLinkButton_Click(object sender, EventArgs e)
+        {
+            AddPage addlink = new AddPage();
+            addlink.ShowDialog();
+
+
+        }
+
+        private void MainUpdateLinkButton_Click(object sender, EventArgs e)
+        {
+            UpdatePage updatelink = new UpdatePage();
+            updatelink.ShowDialog();
+        }
     }
 }

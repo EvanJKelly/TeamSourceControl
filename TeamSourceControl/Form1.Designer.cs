@@ -69,6 +69,7 @@
             this.MainUpdateLinkButton.TabIndex = 3;
             this.MainUpdateLinkButton.Text = "Update Link";
             this.MainUpdateLinkButton.UseVisualStyleBackColor = true;
+            this.MainUpdateLinkButton.Click += new System.EventHandler(this.MainUpdateLinkButton_Click);
             // 
             // MainDeleteLinkButton
             // 
