@@ -16,5 +16,10 @@ namespace TeamSourceControl
         {
             InitializeComponent();
         }
+
+        private void UpdatePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

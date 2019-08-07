@@ -88,6 +88,7 @@
             this.Controls.Add(this.LinkTitle);
             this.Name = "UpdatePage";
             this.Text = "UpdatePage";
+            this.Load += new System.EventHandler(this.UpdatePage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
