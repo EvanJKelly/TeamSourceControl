@@ -75,6 +75,7 @@
             this.AddLinkButton.TabIndex = 4;
             this.AddLinkButton.Text = "Add Link";
             this.AddLinkButton.UseVisualStyleBackColor = true;
+            this.AddLinkButton.Click += new System.EventHandler(this.AddLinkButton_Click);
             // 
             // AddPage
             // 
