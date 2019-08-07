@@ -60,6 +60,7 @@
             this.MainAddLinkButton.TabIndex = 2;
             this.MainAddLinkButton.Text = "Add Link";
             this.MainAddLinkButton.UseVisualStyleBackColor = true;
+            this.MainAddLinkButton.Click += new System.EventHandler(this.MainAddLinkButton_Click);
             // 
             // MainUpdateLinkButton
             // 
