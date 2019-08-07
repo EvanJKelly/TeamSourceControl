@@ -21,8 +21,9 @@ namespace TeamSourceControl
         {
             Link link = new Link()
             {
-                LinkURL = AddTitleBox.Text,
-                LinkTitle = AddLinkiBox.Text
+                LinkTitle = AddTitleBox.Text,
+                LinkURL = AddLinkiBox.Text
+                
             };
 
             LinkDB.Add(link);

@@ -13,7 +13,7 @@ namespace TeamSourceControl
 
         }
 
-        public Link(String Title, String URL)
+        public Link(string Title, string URL)
         {
 
             LinkTitle = Title;
@@ -25,7 +25,11 @@ namespace TeamSourceControl
 
         public string LinkTitle { get; set; }
 
-        public String LinkURL { get; set; }
+        public string LinkURL { get; set; }
 
+        public override string ToString()
+        {
+            return LinkTitle;
+        }
     }
 }

@@ -15,6 +15,7 @@ namespace TeamSourceControl
         public MainPage()
         {
             InitializeComponent();
+            PopulateLinkComboBox();
         }
 
         private void MainDeleteLinkButton_Click(object sender, EventArgs e)
@@ -25,22 +26,31 @@ namespace TeamSourceControl
             }
         }
 
-       
-            
+        private void PopulateLinkComboBox()
+        {
+            List<Link> links = LinkDB.GetAllLinks();
+            links = links.OrderBy(link => link.LinkTitle).ToList();
 
+            LinkCboBox.Items.Clear();
 
-      
+            foreach(Link l in links)
+            {
+                LinkCboBox.Items.Add(l);
+            }
+        }
 
         private void MainUpdateLinkButton_Click(object sender, EventArgs e)
         {
             UpdatePage updatelink = new UpdatePage();
             updatelink.ShowDialog();
+            PopulateLinkComboBox();
         }
 
         private void MainAddLinkButton_Click(object sender, EventArgs e)
         {
             AddPage addlink = new AddPage();
             addlink.ShowDialog();
+            PopulateLinkComboBox();
         }
     }
 }
