@@ -20,9 +20,24 @@ namespace TeamSourceControl
 
         private void MainDeleteLinkButton_Click(object sender, EventArgs e)
         {
-            if(LinkCboBox.SelectedItem != null)
+            if (LinkCboBox.SelectedIndex < 0)
             {
-                LinkCboBox.Items.Remove(LinkCboBox.SelectedItem);
+                MessageBox.Show("Please choose a student!");
+                return;
+            }
+
+            Link link = LinkCboBox.SelectedItem as Link;
+
+            string msg = $"Are you sure you want to delete {link.LinkTitle} \n" +
+                $"{link.LinkURL}";
+
+            DialogResult answer = MessageBox.Show(msg, "Delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (answer == DialogResult.Yes)
+            {
+                LinkDB.Delete(link.LinkTitle);
+                PopulateLinkComboBox();
+                MessageBox.Show("Link deleted successfully");
             }
         }
         private void PopulateLinkComboBox()
