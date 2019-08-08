@@ -83,10 +83,27 @@ namespace TeamSourceControl
 
                 con.Dispose();
             }
-                
-                
+        }
 
+        public static bool Delete(string title)
+        {
+            SqlConnection con = DBHelper.GetConnection();
 
+            SqlCommand delCmd = new SqlCommand();
+            delCmd.Connection = con;
+            delCmd.CommandText = "DELETE FROM VideoLinks WHERE Title = @title";
+            delCmd.Parameters.AddWithValue("@title", title);
+
+            try
+            {
+                con.Open();
+                int rowsAffected = delCmd.ExecuteNonQuery();
+                return (rowsAffected == 1) ? true : false;
+            }
+            finally
+            {
+                con.Dispose();
+            }
         }
     }
 }
