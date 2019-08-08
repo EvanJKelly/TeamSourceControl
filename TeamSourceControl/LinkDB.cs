@@ -13,7 +13,7 @@ namespace TeamSourceControl
         {
             SqlConnection con = DBHelper.GetConnection();
 
-            string query = "SELECT URL, Title " +
+            string query = "SELECT LinkId , URL, Title " +
                 "FROM VideoLinks";
 
             SqlCommand selCmd = new SqlCommand();
@@ -32,6 +32,7 @@ namespace TeamSourceControl
                 Link tempLink = new Link();
                 tempLink.LinkTitle = Convert.ToString(rdr["Title"]);
                 tempLink.LinkURL = Convert.ToString(rdr["URL"]);
+                tempLink.LinkId = Convert.ToInt32(rdr["LinkId"]);
                 linkList.Add(tempLink);
             }
 
@@ -67,11 +68,13 @@ namespace TeamSourceControl
             SqlConnection con = DBHelper.GetConnection();
             SqlCommand updateCmd = new SqlCommand();
             updateCmd.Connection = con;
-            updateCmd.CommandText = "UPDATE Links " +
-                "SET LinkTitle = @LinkTitle, " +
-                "LinkURL = @LinkURL";
-            updateCmd.Parameters.AddWithValue("@LinkTitle", l.LinkTitle);
-            updateCmd.Parameters.AddWithValue("@LinkURL", l.LinkTitle);
+            updateCmd.CommandText = "UPDATE VideoLinks " +
+                "SET Title = @title, " +
+                "URL = @url " +
+                "WHERE LinkId = @lid";
+            updateCmd.Parameters.AddWithValue("@title", l.LinkTitle);
+            updateCmd.Parameters.AddWithValue("@url", l.LinkURL);
+            updateCmd.Parameters.AddWithValue("@lid", l.LinkId);
 
             try
             {

@@ -12,10 +12,7 @@ namespace TeamSourceControl
 {
     public partial class AddPage : Form
     {
-        public AddPage()
-        {
-            InitializeComponent();
-        }
+        
 
         private void AddLinkButton_Click(object sender, EventArgs e)
         {

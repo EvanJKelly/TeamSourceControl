@@ -39,16 +39,16 @@ namespace TeamSourceControl
         }
         private void MainUpdateLinkButton_Click(object sender, EventArgs e)
         {
-          
-            UpdatePage updatelink = new UpdatePage();
-            updatelink.ShowDialog();
+            DisplayUpdateForm();
+            PopulateLinkComboBox();
+
         }
 
         private void DisplayUpdateForm()
         {
-            UpdatePage updatelink = new UpdatePage();
-            updatelink.ShowDialog();
-            PopulateLinkComboBox();
+            var updateForm = new UpdatePage(LinkCboBox.SelectedItem as Link);
+            updateForm.ShowDialog();
+            
         }
 
         private void MainAddLinkButton_Click(object sender, EventArgs e)
