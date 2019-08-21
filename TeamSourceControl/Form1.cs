@@ -78,5 +78,20 @@ namespace TeamSourceControl
             Link link = LinkCboBox.SelectedItem as Link;
             wbPlayer.Url = new Uri(link.LinkURL);
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string search = txtSearchBar.Text.Trim(' ').ToLower();
+
+            for (int i = 0; i < LinkCboBox.Items.Count; i++)
+            {
+                string item = Convert.ToString(LinkCboBox.Items[i]).Trim(' ').ToLower();
+                if (item == search)
+                {
+                    LinkCboBox.SelectedIndex = i;
+                }
+            }
+            
+        }
     }
 }

@@ -34,12 +34,14 @@
             this.MainUpdateLinkButton = new System.Windows.Forms.Button();
             this.MainDeleteLinkButton = new System.Windows.Forms.Button();
             this.wbPlayer = new System.Windows.Forms.WebBrowser();
+            this.txtSearchBar = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LinkCboBox
             // 
             this.LinkCboBox.FormattingEnabled = true;
-            this.LinkCboBox.Location = new System.Drawing.Point(236, 39);
+            this.LinkCboBox.Location = new System.Drawing.Point(104, 30);
             this.LinkCboBox.Name = "LinkCboBox";
             this.LinkCboBox.Size = new System.Drawing.Size(210, 21);
             this.LinkCboBox.TabIndex = 0;
@@ -48,7 +50,7 @@
             // Links
             // 
             this.Links.AutoSize = true;
-            this.Links.Location = new System.Drawing.Point(178, 42);
+            this.Links.Location = new System.Drawing.Point(49, 34);
             this.Links.Name = "Links";
             this.Links.Size = new System.Drawing.Size(35, 13);
             this.Links.TabIndex = 1;
@@ -92,11 +94,30 @@
             this.wbPlayer.Size = new System.Drawing.Size(639, 363);
             this.wbPlayer.TabIndex = 5;
             // 
+            // txtSearchBar
+            // 
+            this.txtSearchBar.Location = new System.Drawing.Point(398, 31);
+            this.txtSearchBar.Name = "txtSearchBar";
+            this.txtSearchBar.Size = new System.Drawing.Size(172, 20);
+            this.txtSearchBar.TabIndex = 7;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(576, 30);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearchBar);
             this.Controls.Add(this.wbPlayer);
             this.Controls.Add(this.MainDeleteLinkButton);
             this.Controls.Add(this.MainUpdateLinkButton);
@@ -118,6 +139,8 @@
         private System.Windows.Forms.Button MainUpdateLinkButton;
         private System.Windows.Forms.Button MainDeleteLinkButton;
         private System.Windows.Forms.WebBrowser wbPlayer;
+        private System.Windows.Forms.TextBox txtSearchBar;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
