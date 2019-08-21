@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdatePage));
             this.LinkTitlelabel = new System.Windows.Forms.Label();
             this.LinkLabel = new System.Windows.Forms.Label();
             this.UpdateTItleBox = new System.Windows.Forms.TextBox();
             this.UpdateLinkBox = new System.Windows.Forms.TextBox();
             this.UpdateLinkButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LinkTitlelabel
@@ -77,11 +80,21 @@
             this.UpdateLinkButton.UseVisualStyleBackColor = true;
             this.UpdateLinkButton.Click += new System.EventHandler(this.UpdateLinkButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(423, 60);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 176);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // UpdatePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 339);
+            this.ClientSize = new System.Drawing.Size(707, 338);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UpdateLinkButton);
             this.Controls.Add(this.UpdateLinkBox);
             this.Controls.Add(this.UpdateTItleBox);
@@ -90,6 +103,7 @@
             this.Name = "UpdatePage";
             this.Text = "UpdatePage";
             this.Load += new System.EventHandler(this.UpdatePage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +116,6 @@
         private System.Windows.Forms.TextBox UpdateTItleBox;
         private System.Windows.Forms.TextBox UpdateLinkBox;
         private System.Windows.Forms.Button UpdateLinkButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
