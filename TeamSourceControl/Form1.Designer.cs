@@ -34,8 +34,8 @@
             this.MainUpdateLinkButton = new System.Windows.Forms.Button();
             this.MainDeleteLinkButton = new System.Windows.Forms.Button();
             this.wbPlayer = new System.Windows.Forms.WebBrowser();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtSearchBar = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LinkCboBox
@@ -94,29 +94,29 @@
             this.wbPlayer.Size = new System.Drawing.Size(639, 363);
             this.wbPlayer.TabIndex = 5;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(391, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Search: ";
-            // 
             // txtSearchBar
             // 
-            this.txtSearchBar.Location = new System.Drawing.Point(458, 31);
+            this.txtSearchBar.Location = new System.Drawing.Point(398, 31);
             this.txtSearchBar.Name = "txtSearchBar";
             this.txtSearchBar.Size = new System.Drawing.Size(172, 20);
             this.txtSearchBar.TabIndex = 7;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(576, 30);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 8;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearchBar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.wbPlayer);
             this.Controls.Add(this.MainDeleteLinkButton);
             this.Controls.Add(this.MainUpdateLinkButton);
@@ -138,8 +138,8 @@
         private System.Windows.Forms.Button MainUpdateLinkButton;
         private System.Windows.Forms.Button MainDeleteLinkButton;
         private System.Windows.Forms.WebBrowser wbPlayer;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSearchBar;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
