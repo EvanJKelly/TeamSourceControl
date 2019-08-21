@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddPage));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.AddTitleBox = new System.Windows.Forms.TextBox();
             this.AddLinkiBox = new System.Windows.Forms.TextBox();
             this.AddLinkButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.PictureBoxAddpage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAddpage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,11 +83,37 @@
             this.AddLinkButton.UseVisualStyleBackColor = true;
             this.AddLinkButton.Click += new System.EventHandler(this.AddLinkButton_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // PictureBoxAddpage
+            // 
+            this.PictureBoxAddpage.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxAddpage.Image")));
+            this.PictureBoxAddpage.Location = new System.Drawing.Point(435, 82);
+            this.PictureBoxAddpage.Name = "PictureBoxAddpage";
+            this.PictureBoxAddpage.Size = new System.Drawing.Size(151, 124);
+            this.PictureBoxAddpage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxAddpage.TabIndex = 5;
+            this.PictureBoxAddpage.TabStop = false;
+            this.PictureBoxAddpage.UseWaitCursor = true;
+            this.PictureBoxAddpage.WaitOnLoad = true;
+            this.PictureBoxAddpage.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // AddPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 291);
+            this.ClientSize = new System.Drawing.Size(598, 291);
+            this.Controls.Add(this.PictureBoxAddpage);
             this.Controls.Add(this.AddLinkButton);
             this.Controls.Add(this.AddLinkiBox);
             this.Controls.Add(this.AddTitleBox);
@@ -90,6 +122,7 @@
             this.Name = "AddPage";
             this.Text = "AddPage";
             this.Load += new System.EventHandler(this.AddPage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAddpage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,5 +135,8 @@
         private System.Windows.Forms.TextBox AddTitleBox;
         private System.Windows.Forms.TextBox AddLinkiBox;
         private System.Windows.Forms.Button AddLinkButton;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.PictureBox PictureBoxAddpage;
     }
 }
