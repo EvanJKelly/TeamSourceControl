@@ -39,7 +39,7 @@
             // LinkCboBox
             // 
             this.LinkCboBox.FormattingEnabled = true;
-            this.LinkCboBox.Location = new System.Drawing.Point(181, 66);
+            this.LinkCboBox.Location = new System.Drawing.Point(236, 39);
             this.LinkCboBox.Name = "LinkCboBox";
             this.LinkCboBox.Size = new System.Drawing.Size(210, 21);
             this.LinkCboBox.TabIndex = 0;
@@ -48,7 +48,7 @@
             // Links
             // 
             this.Links.AutoSize = true;
-            this.Links.Location = new System.Drawing.Point(130, 69);
+            this.Links.Location = new System.Drawing.Point(178, 42);
             this.Links.Name = "Links";
             this.Links.Size = new System.Drawing.Size(35, 13);
             this.Links.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // MainAddLinkButton
             // 
-            this.MainAddLinkButton.Location = new System.Drawing.Point(520, 50);
+            this.MainAddLinkButton.Location = new System.Drawing.Point(680, 113);
             this.MainAddLinkButton.Name = "MainAddLinkButton";
             this.MainAddLinkButton.Size = new System.Drawing.Size(108, 50);
             this.MainAddLinkButton.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // MainUpdateLinkButton
             // 
-            this.MainUpdateLinkButton.Location = new System.Drawing.Point(520, 147);
+            this.MainUpdateLinkButton.Location = new System.Drawing.Point(680, 224);
             this.MainUpdateLinkButton.Name = "MainUpdateLinkButton";
             this.MainUpdateLinkButton.Size = new System.Drawing.Size(108, 54);
             this.MainUpdateLinkButton.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             // MainDeleteLinkButton
             // 
-            this.MainDeleteLinkButton.Location = new System.Drawing.Point(520, 243);
+            this.MainDeleteLinkButton.Location = new System.Drawing.Point(680, 338);
             this.MainDeleteLinkButton.Name = "MainDeleteLinkButton";
             this.MainDeleteLinkButton.Size = new System.Drawing.Size(108, 52);
             this.MainDeleteLinkButton.TabIndex = 4;
@@ -86,10 +86,10 @@
             // 
             // wbPlayer
             // 
-            this.wbPlayer.Location = new System.Drawing.Point(76, 118);
+            this.wbPlayer.Location = new System.Drawing.Point(12, 75);
             this.wbPlayer.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbPlayer.Name = "wbPlayer";
-            this.wbPlayer.Size = new System.Drawing.Size(395, 201);
+            this.wbPlayer.Size = new System.Drawing.Size(639, 363);
             this.wbPlayer.TabIndex = 5;
             // 
             // MainPage
