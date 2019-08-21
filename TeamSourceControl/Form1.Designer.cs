@@ -33,6 +33,7 @@
             this.MainAddLinkButton = new System.Windows.Forms.Button();
             this.MainUpdateLinkButton = new System.Windows.Forms.Button();
             this.MainDeleteLinkButton = new System.Windows.Forms.Button();
+            this.wbPlayer = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // LinkCboBox
@@ -42,6 +43,7 @@
             this.LinkCboBox.Name = "LinkCboBox";
             this.LinkCboBox.Size = new System.Drawing.Size(210, 21);
             this.LinkCboBox.TabIndex = 0;
+            this.LinkCboBox.SelectedIndexChanged += new System.EventHandler(this.LinkCboBox_SelectedIndexChanged);
             // 
             // Links
             // 
@@ -82,11 +84,20 @@
             this.MainDeleteLinkButton.UseVisualStyleBackColor = true;
             this.MainDeleteLinkButton.Click += new System.EventHandler(this.MainDeleteLinkButton_Click);
             // 
+            // wbPlayer
+            // 
+            this.wbPlayer.Location = new System.Drawing.Point(76, 118);
+            this.wbPlayer.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbPlayer.Name = "wbPlayer";
+            this.wbPlayer.Size = new System.Drawing.Size(395, 201);
+            this.wbPlayer.TabIndex = 5;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.wbPlayer);
             this.Controls.Add(this.MainDeleteLinkButton);
             this.Controls.Add(this.MainUpdateLinkButton);
             this.Controls.Add(this.MainAddLinkButton);
@@ -106,6 +117,7 @@
         private System.Windows.Forms.Button MainAddLinkButton;
         private System.Windows.Forms.Button MainUpdateLinkButton;
         private System.Windows.Forms.Button MainDeleteLinkButton;
+        private System.Windows.Forms.WebBrowser wbPlayer;
     }
 }
 
