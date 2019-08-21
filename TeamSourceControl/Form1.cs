@@ -72,5 +72,11 @@ namespace TeamSourceControl
             addlink.ShowDialog();
             PopulateLinkComboBox();
         }
+
+        private void LinkCboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Link link = LinkCboBox.SelectedItem as Link;
+            wbPlayer.Url = new Uri(link.LinkURL);
+        }
     }
 }
