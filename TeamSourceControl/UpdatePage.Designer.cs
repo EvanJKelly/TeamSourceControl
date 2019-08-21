@@ -38,7 +38,7 @@
             // LinkTitlelabel
             // 
             this.LinkTitlelabel.AutoSize = true;
-            this.LinkTitlelabel.Location = new System.Drawing.Point(262, 85);
+            this.LinkTitlelabel.Location = new System.Drawing.Point(68, 60);
             this.LinkTitlelabel.Name = "LinkTitlelabel";
             this.LinkTitlelabel.Size = new System.Drawing.Size(27, 13);
             this.LinkTitlelabel.TabIndex = 0;
@@ -47,7 +47,7 @@
             // LinkLabel
             // 
             this.LinkLabel.AutoSize = true;
-            this.LinkLabel.Location = new System.Drawing.Point(265, 122);
+            this.LinkLabel.Location = new System.Drawing.Point(71, 97);
             this.LinkLabel.Name = "LinkLabel";
             this.LinkLabel.Size = new System.Drawing.Size(30, 13);
             this.LinkLabel.TabIndex = 1;
@@ -55,21 +55,21 @@
             // 
             // UpdateTItleBox
             // 
-            this.UpdateTItleBox.Location = new System.Drawing.Point(337, 77);
+            this.UpdateTItleBox.Location = new System.Drawing.Point(143, 52);
             this.UpdateTItleBox.Name = "UpdateTItleBox";
             this.UpdateTItleBox.Size = new System.Drawing.Size(223, 20);
             this.UpdateTItleBox.TabIndex = 2;
             // 
             // UpdateLinkBox
             // 
-            this.UpdateLinkBox.Location = new System.Drawing.Point(337, 122);
+            this.UpdateLinkBox.Location = new System.Drawing.Point(143, 97);
             this.UpdateLinkBox.Name = "UpdateLinkBox";
             this.UpdateLinkBox.Size = new System.Drawing.Size(223, 20);
             this.UpdateLinkBox.TabIndex = 3;
             // 
             // UpdateLinkButton
             // 
-            this.UpdateLinkButton.Location = new System.Drawing.Point(316, 202);
+            this.UpdateLinkButton.Location = new System.Drawing.Point(122, 177);
             this.UpdateLinkButton.Name = "UpdateLinkButton";
             this.UpdateLinkButton.Size = new System.Drawing.Size(237, 78);
             this.UpdateLinkButton.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(477, 339);
             this.Controls.Add(this.UpdateLinkButton);
             this.Controls.Add(this.UpdateLinkBox);
             this.Controls.Add(this.UpdateTItleBox);
