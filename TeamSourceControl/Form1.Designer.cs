@@ -34,12 +34,14 @@
             this.MainUpdateLinkButton = new System.Windows.Forms.Button();
             this.MainDeleteLinkButton = new System.Windows.Forms.Button();
             this.wbPlayer = new System.Windows.Forms.WebBrowser();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtSearchBar = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LinkCboBox
             // 
             this.LinkCboBox.FormattingEnabled = true;
-            this.LinkCboBox.Location = new System.Drawing.Point(236, 39);
+            this.LinkCboBox.Location = new System.Drawing.Point(104, 30);
             this.LinkCboBox.Name = "LinkCboBox";
             this.LinkCboBox.Size = new System.Drawing.Size(210, 21);
             this.LinkCboBox.TabIndex = 0;
@@ -48,7 +50,7 @@
             // Links
             // 
             this.Links.AutoSize = true;
-            this.Links.Location = new System.Drawing.Point(178, 42);
+            this.Links.Location = new System.Drawing.Point(49, 34);
             this.Links.Name = "Links";
             this.Links.Size = new System.Drawing.Size(35, 13);
             this.Links.TabIndex = 1;
@@ -92,11 +94,29 @@
             this.wbPlayer.Size = new System.Drawing.Size(639, 363);
             this.wbPlayer.TabIndex = 5;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(391, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Search: ";
+            // 
+            // txtSearchBar
+            // 
+            this.txtSearchBar.Location = new System.Drawing.Point(458, 31);
+            this.txtSearchBar.Name = "txtSearchBar";
+            this.txtSearchBar.Size = new System.Drawing.Size(172, 20);
+            this.txtSearchBar.TabIndex = 7;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtSearchBar);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.wbPlayer);
             this.Controls.Add(this.MainDeleteLinkButton);
             this.Controls.Add(this.MainUpdateLinkButton);
@@ -118,6 +138,8 @@
         private System.Windows.Forms.Button MainUpdateLinkButton;
         private System.Windows.Forms.Button MainDeleteLinkButton;
         private System.Windows.Forms.WebBrowser wbPlayer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSearchBar;
     }
 }
 
