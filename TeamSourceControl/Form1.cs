@@ -54,6 +54,12 @@ namespace TeamSourceControl
         }
         private void MainUpdateLinkButton_Click(object sender, EventArgs e)
         {
+            if (LinkCboBox.SelectedIndex < 0)
+            {
+                MessageBox.Show("Please choose a Link!");
+                return;
+            }
+
             DisplayUpdateForm();
             PopulateLinkComboBox();
 
