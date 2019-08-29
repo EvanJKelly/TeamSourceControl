@@ -22,7 +22,7 @@ namespace TeamSourceControl
         {
             if (LinkCboBox.SelectedIndex < 0)
             {
-                MessageBox.Show("Please choose a student!");
+                MessageBox.Show("Please choose a Link!");
                 return;
             }
 
