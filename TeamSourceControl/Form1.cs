@@ -88,6 +88,7 @@ namespace TeamSourceControl
         private void btnSearch_Click(object sender, EventArgs e)
         {
             string search = txtSearchBar.Text.Trim(' ').ToLower();
+            List<string> searches = new List<string>();
 
             for (int i = 0; i < LinkCboBox.Items.Count; i++)
             {
@@ -96,8 +97,17 @@ namespace TeamSourceControl
                 {
                     LinkCboBox.SelectedIndex = i;
                 }
+                else if (item.Contains(search))
+                {
+                    searches.Add(item);
+                }
             }
-            
+
+            if(searches.Count > 1)
+            {
+                SearchSelection s = new SearchSelection();
+                s.PopulateSelectionComboBox(searches);
+            }
         }
     }
 }

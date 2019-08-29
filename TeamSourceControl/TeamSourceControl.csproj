@@ -63,6 +63,12 @@
     <Compile Include="LinkDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSelection.Designer.cs">
+      <DependentUpon>SearchSelection.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdatePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchSelection.resx">
+      <DependentUpon>SearchSelection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdatePage.resx">
       <DependentUpon>UpdatePage.cs</DependentUpon>
     </EmbeddedResource>
